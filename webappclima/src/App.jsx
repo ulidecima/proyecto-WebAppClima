@@ -24,16 +24,18 @@ function App() {
 
   return (
     <div>
-      <h1>clima App</h1>
-      <form onSubmit={handleSubmit}>
-        <input
-          type="text"
-          placeholder="Ciudad..."
-          value={ciudad}
-          onChange={handleChange}
-        />
-        <button type="submit">Buscar</button>
-      </form>
+      <nav>
+        <h1>clima App</h1>
+        <form onSubmit={handleSubmit}>
+          <input
+            type="text"
+            placeholder="Ciudad..."
+            value={ciudad}
+            onChange={handleChange}
+          />
+          <button type="submit">Buscar</button>
+        </form>
+      </nav>
 
       {error ? (
         <p>{error}</p>
